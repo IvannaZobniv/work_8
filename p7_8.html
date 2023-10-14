@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проста веб-сторінка</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Survey 2023</h2>
+        <form name="form1" action="https://www.google.com" method="post" >
+            <fieldset>
+                <legend>Student Info: </legend>
+                <label>Name:<br>
+                    <input type="text" name="name" placeholder="Ім'я" size="30" maxlength="25" ><br>
+                </label>
+
+                <label>City:<br>
+                    <input type="text" name="city" placeholder="Місто" size="30" maxlength="25"><br>
+                </label>
+
+                <label for="year_of_admission">Year of admission:</label>
+                <select name="year_of_admission" size="1" id="year_of_admission" >
+                    <option value="">year</option>
+                    <option value="2017" >2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Login Details:</legend>
+                <label>Email ID:
+                    <input type="email" name="email_id" placeholder="Електронна адреса" size="20" maxlength="25">
+                </label><br>
+                <label>Password:
+                    <input type="password" name="password" placeholder="Пароль" size="20" maxlength="25">
+                </label>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Course Details:</legend>
+                <label>Undergraduate:</label>
+                <input type="radio" name="undergraduate" id="yes">
+                <label for="yes">YES</label>
+                <input type="radio" name="undergraduate" id="no">
+                <label for="no">NO</label>
+                <br>
+                <label>Subjects: <br></label>
+                <input type="checkbox" name="undergraduate" id="1">
+                <label for="1">DB in Geoscience</label><br>
+                <input type="checkbox" name="undergraduate" id="2">
+                <label for="2">Programming</label><br>
+                <input type="checkbox" name="undergraduate" id="3">
+                <label for="3">GIS basics</label><br>
+            </fieldset>
+            <input type="submit" value="Submit" id = "button">
+        </form>
+    </main>
+</body>
+</html>
